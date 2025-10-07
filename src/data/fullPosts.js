@@ -8,17 +8,8 @@ const fullPosts = [
         text: `
         Hey friends, Happy Monday!
         I realized that the best method for programming is project-based learning. For example,
-         I started coding this blog without any knowledge of react-router, but during coding I am learning.
-         hat the best method for programming is project-based learning. For example,
-         I started coding this blog without any knowledge of react-router, but during coding I am learning.
-         hat the best method for programming is project-based learning. For example,
-         I started coding this blog without any knowledge of react-router, but during coding I am learning.
-         hat the best method for programming is project-based learning. For example,
-         I started coding this blog without any knowledge of react-router, but during coding I am learning.
-         hat the best method for programming is project-based learning. For example,
-         I started coding this blog without any knowledge of react-router, but during coding I am learning.
-         hat the best method for programming is project-based learning. For example,
-         I started coding this blog without any knowledge of react-router, but during coding I am learning.
+         I started coding this blog without any knowledge of react-router, but during coding I am learning. 
+         I learned a lot of things about declarative mode: routing, navigating, and URL values.
         `
     },
     {

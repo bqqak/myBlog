@@ -1,6 +1,6 @@
 import { useParams, Link } from 'react-router-dom';
-import data from '../../data/fullPosts.js'
-function FullPost(){
+import data from '../../data/discussions.js'
+function DisplayDiscussions(){
     const id = Number(useParams().id);
     const information = data.find(e => e.id === id);
 
@@ -18,7 +18,7 @@ function FullPost(){
                 <p className={'text-2xl text-center px-4'}>{information.title}</p>
                 <p className={'text-base text-gray-400 text-center max-w-2xl px-4'}>{information.description}</p>
                 <div className={'text-sm text-gray-500'}>
-                    <span>{information.time}</span>
+                    <span>{information.date}</span>
                     <span> • </span>
                     <span>{information.name}</span>
                 </div>
@@ -30,4 +30,4 @@ function FullPost(){
         </div>
     )
 }
-export default FullPost;
+export default DisplayDiscussions;

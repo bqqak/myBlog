@@ -1,17 +1,10 @@
-import { useParams, Link } from 'react-router-dom';
-import data from '../../data/fullPosts.js'
-function FullPost(){
+import {useParams} from "react-router-dom";
+import top from "../../data/top.js";
+
+function DisplayTops() {
     const id = Number(useParams().id);
-    const information = data.find(e => e.id === id);
-
-    if (!information) {
-        return (
-            <div className={'flex flex-col items-center justify-center mt-10 gap-4'}>
-                <p className={'text-lg font-medium'}>Post not found</p>
-            </div>
-        );
-    }
-
+    const information = top.find(e => e.id === id);
+    if(!information) return <div className={'text-xl'}>Post not found</div>
     return (
         <div className={'flex flex-col justify-center items-center gap-10'}>
             <div className={'flex flex-col justify-center items-center gap-2 w-full'}>
@@ -30,4 +23,4 @@ function FullPost(){
         </div>
     )
 }
-export default FullPost;
+export default DisplayTops
